@@ -111,4 +111,4 @@ class Search extends Component {
   }
 }
 
-export default Books;
+export default Search;
