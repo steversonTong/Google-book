@@ -21,7 +21,7 @@ class Search extends Component {
   };
 
   getBooks = () => {
-    API.getBooks(this.state.q)
+    API.getBooks(this.state)
       .then((res) =>
         this.setState({
           books: res.data,
@@ -71,7 +71,6 @@ class Search extends Component {
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
-                q={this.state.q}
               />
             </Card>
           </Col>
